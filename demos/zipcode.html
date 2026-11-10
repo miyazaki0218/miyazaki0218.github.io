@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>郵便番号から住所を自動入力 | Ryo Miyazaki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="demo-header">
+    <a href="../index.html" class="demo-header__logo">RYO<span>.</span>MIYAZAKI</a>
+    <a href="../index.html#lab" class="demo-header__back">← 戻る</a>
+  </header>
+
+  <main class="demo">
+    <p class="demo__num">LAB 01</p>
+    <h1 class="demo__title">郵便番号から住所を自動入力</h1>
+    <p class="demo__text">郵便番号を7桁で入れて「住所を検索」を押すと、住所欄に入力されます（例：1000001）。</p>
+
+    <!-- フォーム -->
+    <div class="demo__box">
+      <div class="field">
+        <label class="field__label" for="zip">郵便番号（ハイフンなし）</label>
+        <div class="field__row">
+          <input class="input zip-input" id="zip" type="text" inputmode="numeric" maxlength="7" placeholder="1000001">
+          <button class="btn search-btn" type="button">住所を検索</button>
+        </div>
+        <p class="message"></p>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="address">住所</label>
+        <input class="input address-input" id="address" type="text" placeholder="郵便番号から自動で入ります">
+      </div>
+    </div>
+  </main>
+
+  <script src="zipcode.js"></script>
+</body>
+</html>

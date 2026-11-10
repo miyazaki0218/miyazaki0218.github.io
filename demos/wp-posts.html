@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>WordPressの記事を読み込む | Ryo Miyazaki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="demo-header">
+    <a href="../index.html" class="demo-header__logo">RYO<span>.</span>MIYAZAKI</a>
+    <a href="../index.html#lab" class="demo-header__back">← 戻る</a>
+  </header>
+
+  <main class="demo">
+    <p class="demo__num">LAB 02</p>
+    <h1 class="demo__title">WordPressの記事を読み込む</h1>
+    <p class="demo__text">WordPress REST APIを使って、WordPress日本語版サイト（ja.wordpress.org）のお知らせを読み込みます。件数を選んで「読み込む」を押してください。</p>
+
+    <!-- 記事一覧 -->
+    <div class="demo__box">
+      <div class="field">
+        <label class="field__label" for="count">表示する件数</label>
+        <div class="field__row">
+          <select class="select count-select" id="count">
+            <option value="3">3件</option>
+            <option value="5" selected>5件</option>
+            <option value="10">10件</option>
+          </select>
+          <button class="btn load-btn" type="button">読み込む</button>
+        </div>
+        <p class="message"></p>
+      </div>
+
+      <ul class="posts"></ul>
+    </div>
+  </main>
+
+  <script src="wp-posts.js"></script>
+</body>
+</html>

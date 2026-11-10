@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Portfolio | 宮崎 凌</title>
+  <meta name="description" content="WordPressサイトの構築とコーディングを得意とするWebコーダー宮崎 凌のポートフォリオです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#top" class="header__logo">RYO<span>.</span>MIYAZAKI</a>
+      <button class="header__btn" type="button" aria-label="メニュー">
+        <span></span><span></span>
+      </button>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#about"><small>01</small>About</a></li>
+          <li><a href="#skills"><small>02</small>Skills</a></li>
+          <li><a href="#works"><small>03</small>Works</a></li>
+          <li><a href="#lab"><small>04</small>Lab</a></li>
+          <li><a href="#contact"><small>05</small>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+      <div class="hero__blob" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="hero__label"><span class="dot"></span>Web Coder / WordPress / Tokyo</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span>CODE</span></span>
+          <span class="hero__line"><span>THE</span></span>
+          <span class="hero__line"><span>DESIGN<em>.</em></span></span>
+        </h1>
+        <p class="hero__text">デザインを、そのまま動くサイトに。<br>WordPressの構築からサーバー移管・保守まで。</p>
+      </div>
+
+      <p class="hero__scroll">SCROLL</p>
+    </section>
+
+    <!-- 流れる文字 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__inner">
+        <span>HTML</span><span>CSS</span><span>SASS</span><span>JAVASCRIPT</span><span>JQUERY</span><span>PHP</span><span>WORDPRESS</span><span>DOCKER</span><span>FIGMA</span>
+        <span>HTML</span><span>CSS</span><span>SASS</span><span>JAVASCRIPT</span><span>JQUERY</span><span>PHP</span><span>WORDPRESS</span><span>DOCKER</span><span>FIGMA</span>
+      </div>
+    </div>
+
+    <!-- 自己紹介 -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title js-reveal"><small>01</small>About<span>自己紹介</span></h2>
+
+        <div class="about">
+          <div class="about__main js-reveal">
+            <p class="about__catch">整備士からデザイナーへ、<br>そして<mark>コーダー</mark>へ。</p>
+            <p class="about__name">宮崎 凌<span>Ryo Miyazaki</span></p>
+            <p>自動車整備士からWebデザイナーに転職し、Webデザイナーとして約3年、Webコーダーとして約2年半、Web制作に携わってきました。デザイナー時代からコーディングも担当しており、コーディング経験は約4年半です。</p>
+            <p>現在は制作会社で、WordPressのオリジナルテーマ構築を中心としたコーディングと、サーバー移管・サイト修正などの保守を担当しています。Dockerで本番と同じバージョンの開発環境を作り、公開後の不具合を防ぐことを大切にしています。</p>
+          </div>
+
+          <ul class="about__nums js-reveal">
+            <li><p class="about__num">4.5<small>年</small></p><p>コーディング経験</p></li>
+            <li><p class="about__num">3<small>年</small></p><p>WordPress</p></li>
+            <li><p class="about__num">3<small>年</small></p><p>Webデザイナー</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- スキル -->
+    <section class="section section--dark" id="skills">
+      <div class="container">
+        <h2 class="section__title js-reveal"><small>02</small>Skills<span>スキル</span></h2>
+
+        <div class="skills-group js-reveal">
+          <h3 class="skills-group__title">Language</h3>
+          <ul class="skills">
+            <li class="skill"><p class="skill__name">HTML</p><p class="skill__year">4<small>年</small></p><p class="skill__text">セマンティックなマークアップ、レスポンシブ対応のコーディング</p></li>
+            <li class="skill"><p class="skill__name">CSS</p><p class="skill__year">4<small>年</small></p><p class="skill__text">レスポンシブデザイン、アニメーション、Flexbox・Gridでのレイアウト</p></li>
+            <li class="skill"><p class="skill__name">Sass</p><p class="skill__year">2<small>年</small></p><p class="skill__text">変数・ネスト・mixinを使ったスタイルの管理</p></li>
+            <li class="skill"><p class="skill__name">JavaScript</p><p class="skill__year">4<small>年</small></p><p class="skill__text">DOM操作（ハンバーガーメニュー・アコーディオン・タブ・モーダルなど）、fetchを使ったAPI連携</p></li>
+            <li class="skill"><p class="skill__name">jQuery</p><p class="skill__year">3<small>年</small></p><p class="skill__text">slickを使ったスライダー、クリックでの表示切り替えなどの基本的な動き</p></li>
+            <li class="skill"><p class="skill__name">PHP</p><p class="skill__year">1.5<small>年</small></p><p class="skill__text">WordPressのテーマ制作に必要な範囲（テンプレートの編集、ループ、カスタムフィールドの出力など）</p></li>
+          </ul>
+        </div>
+
+        <div class="skills-group js-reveal">
+          <h3 class="skills-group__title">CMS / Environment</h3>
+          <ul class="skills">
+            <li class="skill"><p class="skill__name">WordPress</p><p class="skill__year">3<small>年</small></p><p class="skill__text">オリジナルテーマの構築・カスタマイズ、サーバー移管、サイト修正・保守</p></li>
+            <li class="skill"><p class="skill__name">Docker</p><p class="skill__year">3<small>年</small></p><p class="skill__text">WordPressのローカル開発環境の構築</p></li>
+            <li class="skill"><p class="skill__name">Git / GitHub</p><p class="skill__year">1<small>年</small></p><p class="skill__text">ソースコードのバージョン管理</p></li>
+            <li class="skill"><p class="skill__name">お名前.com</p><p class="skill__year">2<small>年</small></p><p class="skill__text">デモ環境の構築、PHPバージョン変更・Basic認証などの設定、FTPでのファイル管理</p></li>
+          </ul>
+        </div>
+
+        <div class="skills-group js-reveal">
+          <h3 class="skills-group__title">Design Tools</h3>
+          <ul class="skills">
+            <li class="skill"><p class="skill__name">Photoshop</p><p class="skill__year">3<small>年</small></p><p class="skill__text">Webサイト・バナーのデザイン、画像の加工</p></li>
+            <li class="skill"><p class="skill__name">Illustrator</p><p class="skill__year">3<small>年</small></p><p class="skill__text">Webサイト・バナーのデザイン</p></li>
+            <li class="skill"><p class="skill__name">Figma</p><p class="skill__year">2<small>年</small></p><p class="skill__text">Webサイト・バナーのデザイン</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 制作実績 -->
+    <section class="section" id="works">
+      <div class="container">
+        <h2 class="section__title js-reveal"><small>03</small>Works<span>制作実績</span></h2>
+        <p class="section__lead js-reveal">現職で担当したサイトです。どれもデザインカンプをもとに、サイト全体のコーディングを担当しました。</p>
+
+        <ul class="works">
+          <li class="work js-reveal">
+            <a href="https://askbeauty.co.jp/" class="work__img" target="_blank" rel="noopener">
+              <span class="work__noimg">AskBeauty</span>
+              <span class="work__view">VIEW SITE ↗</span>
+            </a>
+            <div class="work__body">
+              <p class="work__num">01</p>
+              <p class="work__cat">サービスサイト（1ページ型） / 美容サロン専門M&amp;A仲介</p>
+              <h3 class="work__title">AskBeauty</h3>
+              <ul class="work__tags"><li>HTML</li><li>CSS</li><li>jQuery</li><li>slick</li></ul>
+              <dl class="work__data">
+                <div><dt>担当</dt><dd>コーディング（サイト全体）</dd></div>
+                <div><dt>主な実装</dt><dd>slickを使った事例スライダー（スライドごとに高さをそろえる処理つき）、横に流れ続けるテキスト、スクロールに合わせた表示アニメーション、ハンバーガーメニュー、ヘッダーの高さを考えたスムーススクロール、お問い合わせフォーム</dd></div>
+              </dl>
+            </div>
+          </li>
+
+
+          <li class="work js-reveal">
+            <a href="https://new-bj.co.jp/" class="work__img" target="_blank" rel="noopener">
+              <span class="work__noimg">NEW BRIDGE JAPAN</span>
+              <span class="work__view">VIEW SITE ↗</span>
+            </a>
+            <div class="work__body">
+              <p class="work__num">02</p>
+              <p class="work__cat">コーポレートサイト / フィットネス</p>
+              <h3 class="work__title">NEW BRIDGE JAPAN</h3>
+              <ul class="work__tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>WordPress</li></ul>
+              <dl class="work__data">
+                <div><dt>担当</dt><dd>コーディング（1ページ型のサイト全体）、WordPress構築</dd></div>
+                <div><dt>主な実装</dt><dd>PC・スマホで切り替わるメインビジュアル、ニュース・ブログ一覧</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="work js-reveal">
+            <a href="https://japan-teambuilding.com/" class="work__img" target="_blank" rel="noopener">
+              <span class="work__noimg">japan teambuilding</span>
+              <span class="work__view">VIEW SITE ↗</span>
+            </a>
+            <div class="work__body">
+              <p class="work__num">03</p>
+              <p class="work__cat">サービスサイト（英語） / 法人向けイベント</p>
+              <h3 class="work__title">japan teambuilding</h3>
+              <ul class="work__tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>WordPress</li></ul>
+              <dl class="work__data">
+                <div><dt>担当</dt><dd>コーディング（サイト全体）、WordPress構築</dd></div>
+                <div><dt>主な実装</dt><dd>サービス一覧・事例・コラムの一覧と詳細ページ、よくある質問</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="work js-reveal">
+            <a href="https://sunny-tech.jp/" class="work__img" target="_blank" rel="noopener">
+              <span class="work__noimg">SUNNY TECH</span>
+              <span class="work__view">VIEW SITE ↗</span>
+            </a>
+            <div class="work__body">
+              <p class="work__num">04</p>
+              <p class="work__cat">コーポレートサイト / メディア・コミュニティ運営</p>
+              <h3 class="work__title">SUNNY TECH</h3>
+              <ul class="work__tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>jQuery</li><li>slick</li><li>PHP</li><li>WordPress</li></ul>
+              <dl class="work__data">
+                <div><dt>担当</dt><dd>コーディング（サイト全体）、WordPress構築</dd></div>
+                <div><dt>主な実装</dt><dd>JavaScriptで自作したメインビジュアルのスライドショー（PC・スマホ別）、メインビジュアルを過ぎたら表示されるヘッダー、slickで流れ続けるスライダー、お知らせ一覧・詳細</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="work js-reveal">
+            <a href="https://rokujigen.co.jp/tiktok-shop/" class="work__img" target="_blank" rel="noopener">
+              <span class="work__noimg">TikTok Shop LP</span>
+              <span class="work__view">VIEW SITE ↗</span>
+            </a>
+            <div class="work__body">
+              <p class="work__num">05</p>
+              <p class="work__cat">LP / デジタルマーケティング</p>
+              <h3 class="work__title">TikTok Shop 運用支援サービス LP</h3>
+              <ul class="work__tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>WordPress</li></ul>
+              <dl class="work__data">
+                <div><dt>担当</dt><dd>コーディング（ページ全体）、WordPress構築</dd></div>
+                <div><dt>主な実装</dt><dd>悩み → サービス → 強みと続くLPの構成、ページ内リンクのメニュー、選択式・ラジオボタン・同意チェックを含むお問い合わせフォーム</dd></div>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JS作品 -->
+    <section class="section section--line" id="lab">
+      <div class="container">
+        <h2 class="section__title js-reveal"><small>04</small>Lab<span>JavaScript作品</span></h2>
+        <p class="section__lead js-reveal">業務とは別に、JavaScriptの練習として自分で作ったものです。実際に動かせます。</p>
+
+        <ul class="labs">
+          <li class="lab js-reveal">
+            <p class="lab__num">LAB 01</p>
+            <h3 class="lab__title">郵便番号から住所を自動入力</h3>
+            <p class="lab__text">お問い合わせフォームでよく使う機能です。郵便番号を入れてボタンを押すと、外部APIから住所を取得して住所欄に入力します。見つからない番号や桁数の間違いにはメッセージを出します。</p>
+            <ul class="work__tags"><li>JavaScript</li><li>fetch</li><li>async / await</li><li>郵便番号検索API</li></ul>
+            <a href="demos/zipcode.html" class="lab__link" target="_blank" rel="noopener">デモを見る<span>↗</span></a>
+          </li>
+
+          <li class="lab js-reveal">
+            <p class="lab__num">LAB 02</p>
+            <h3 class="lab__title">WordPressの記事を読み込む</h3>
+            <p class="lab__text">WordPress REST APIから記事を取得して、一覧を表示します。件数を選んで読み込めます。WordPressの外（LPや別サイト）に、ブログの新着記事を出すときに使える仕組みです。</p>
+            <ul class="work__tags"><li>JavaScript</li><li>fetch</li><li>map</li><li>WordPress REST API</li></ul>
+            <a href="demos/wp-posts.html" class="lab__link" target="_blank" rel="noopener">デモを見る<span>↗</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 連絡先 -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section__title js-reveal"><small>05</small>Contact<span>お問い合わせ</span></h2>
+        <p class="contact__text js-reveal">ご連絡は、下記のメールアドレスからお願いいたします。</p>
+        <a href="mailto:miyazaki0218@icloud.com" class="contact__mail js-reveal">miyazaki0218@icloud.com<span>↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__logo">RYO<span>.</span>MIYAZAKI</p>
+    <small>&copy; Ryo Miyazaki</small>
+  </footer>
+
+  <a href="#top" class="to-top" aria-label="ページの先頭へ">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
